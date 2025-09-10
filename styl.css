@@ -1,0 +1,175 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fc9802, #00f2fe);
+  margin: 0;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  width: 100%;
+  min-height: 60px;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #fc9802, #00f2fe);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.logout-btn:hover {
+  background: #cc0000;
+}
+
+/* ===== Container ===== */
+.container {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+  margin: 100px auto; /* so it sits below navbar */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+/* ===== Inputs ===== */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 85%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 6px rgba(79, 172, 254, 0.5);
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 12px 20px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ecdd08, #00f2fe);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Balance ===== */
+#balance {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* ===== Transaction History ===== */
+#history {
+  list-style: none;
+  padding: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  text-align: left;
+  margin-top: 15px;
+}
+
+#history li {
+  background: #f8f9fa;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  border-left: 5px solid #4facfe;
+  animation: slideIn 0.3s ease;
+}
+
+/* Color coding */
+.deposit {
+  border-left-color: #28a745;
+  color: #155724;
+}
+
+.withdraw {
+  border-left-color: #dc3545;
+  color: #721c24;
+}
+
+.transfer {
+  border-left-color: #007bff;
+  color: #004085;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-15px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
+
+

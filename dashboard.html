@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Bank - Dashboard</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <!-- 🔹 NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="logo">🏦 Mini Bank</span>
+    </div>
+    <div class="nav-right">
+      <span id="navUser"></span>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+
+  <!-- 🔹 DASHBOARD CONTENT -->
+  <div class="container">
+    <h2>Account Overview</h2>
+    <p id="balance">Balance: $0</p>
+
+    <div class="controls">
+      <input type="number" id="amount" placeholder="Enter amount">
+      <button onclick="depositMoney()">Deposit</button>
+      <button onclick="withdrawMoney()">Withdraw</button>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="transferUser" placeholder="Recipient Username">
+      <input type="number" id="transferAmount" placeholder="Amount">
+      <button onclick="transferMoney()">Transfer</button>
+    </div>
+
+    <h2>📜 Transaction History</h2>
+    <ul id="history"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
